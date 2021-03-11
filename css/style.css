@@ -1,0 +1,330 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+ 
+}
+body{
+    background-image: url("pictures/lak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+}
+/* navbar */
+ nav, ul{
+     display: flex;
+     background: black;
+     color: white;
+     
+}
+li{
+    list-style: none;
+    padding: 30px;
+}
+.contain{
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+/* home */
+.homes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:3fr 2fr 2fr 1.5fr;
+    height: 100vh;
+    grid-template-areas: 
+    "home1 home1 home1 home1"
+    "home2  home2 home3 home3"
+    "home2 home2 home3 home3"
+    "home4 home4 home4 home4"
+    ;
+}
+.text{
+    color: #ffffff;
+}
+
+p{
+    padding: 15px;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+.pic1{
+    width: 100%;
+    height: 100%;
+}
+.h1{
+    position: absolute;
+    left: 50%;
+    top: 19%;
+    transform: translate(-50%, -50%);
+}
+.home5,
+.home6{
+    color: white;
+    padding: 15px;
+    
+}
+button{
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    background:#ffa500;
+    font-weight: bold;
+}
+
+
+.home2{
+    background: #3D9970;
+    grid-area: home2;
+}
+.home3{
+    grid-area: home3;
+}
+.home4{
+    grid-area: home3;
+}
+@media(max-width:500px){
+    .homes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "home1"
+        "home2"
+        "home3"
+        "home4"
+        ;
+    }
+}
+@media(max-width:700px ) and (min-width:500px){
+    .footer{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 3fr 1.5fr 1.5fr ;
+        grid-template-areas:
+        "home1 home1 home1 home1"
+        "home2 home2 home3 home3"
+        "home2 home2 home3 home3"
+        "home4 home4 home4 home4"
+    }
+
+}
+/* menu */
+.menu1{
+    width: 100%;
+    height: 350px;
+    background-image: url('https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.menu2{
+    width: 100%;
+    height: 350px;
+    background: rgba(22, 22, 22, 0.527);
+}
+.menu3{
+    text-align: center;
+    padding-top: 15%;
+    color: #00FFFF;
+    font-weight: bold;
+}
+.menu4{
+    font-size: 20px;
+    text-align: center;
+    color: #00FFFF;
+}
+.menu6{
+    margin-left: 10px;
+    padding: 17px;
+    border-radius: 20px;
+}
+.menu6:hover{
+    cursor: pointer;
+    transform: scaleY(0.8);
+}
+.menu7{
+    padding: 30px;
+    font-size: 40px;
+    color: #dc143c;
+    font-weight: bold;
+}
+/* contact */
+.contact{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    height: 130vh;
+    grid-template-areas: 
+    "contact1 contact1 contact1 contact1"
+    "contact2 contact2 contact3 contact3 "
+    "contact2 contact2 contact3 contact3"
+    "contact4 contact4 contact4 contact4";
+}
+.contact1{
+    background: rgba(41, 34, 34, 0.288);
+    grid-area: contact1;
+    text-align: center;
+    color: #00FFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+.contact2{
+    background: rgba(20, 19, 19, 0.027);
+    grid-area: contact2;
+    color: white;
+    
+}
+.contact3{
+    background: rgba(41, 34, 34, 0.288);
+    grid-area: contact3;
+    color: white;
+    
+}
+.contact4{
+    background: rgba(41, 34, 34, 0.288);
+    grid-area: contact4;
+    padding: 10px;
+}
+.contact6{
+    margin-top: 80px;
+}
+.contact7{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.contact5{
+    background:rgb(255, 246, 246);
+    margin-left: 40px;
+    height: 450px;
+    width: 400px;
+}
+label{
+    margin: 30px;
+    padding-top: 50px;
+    font-size: 25px;
+}
+input{
+    width: 350px;
+    height: 30px;
+    margin-left: 20px;
+}
+.submit{
+    background: rgb(2, 65, 41);
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+textarea{
+    margin-left: 20px;
+}
+
+@media(max-width:500px){
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "contact1"
+        "contact2"
+        "contact3"
+        "contact4"
+       ;
+    }
+}
+@media(max-width:700px ) and (min-width:500px){
+    .contact{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 1.5fr 1.5fr 1.5fr  ;
+        height: 200vh;
+        grid-template-areas:
+        "contact1 contact1 contact1 contact1"
+        "contact2 contact2 contact3 contact3 "
+        "contact2 contact2 contact3 contact3"
+        "contact4 contact4 contact4 contact4";
+    }
+
+}
+
+/* footer */
+
+.footer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 2fr 1fr 1.5fr 1.5fr 0.5fr;
+    height: 70vh;
+    grid-template-areas: 
+    "item1 item1 item1 item1 "
+    "item2 item3 item4 item5 "
+    "item2 item3 item4 item5 ";
+}
+.item1{
+    background: black;
+    grid-area: item1;
+    text-align: center;
+    color: #00FFFF;
+    font-weight: bold;
+    padding: 10px;
+}
+.item2{
+    background: black;
+    grid-area: item2;
+    color: white;
+    text-align: center;
+}
+.item3{
+    background: black;
+    grid-area: item3;
+    color: white;
+    text-align: center;
+}
+.item4{
+    grid-area: item4;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.item5{
+    grid-area: item5;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+@media(max-width:500px){
+    .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
+    }
+}
+@media(max-width:700px ) and (min-width:500px){
+    .footer{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr ;
+        grid-template-areas:
+        "item1 item1 item1 item1"
+        "item1 item1 item1 item1"
+        "item2 item3 item4 item5"
+        "item2 item3 item4 item5"
+        "item2 item3 item4 item5"
+        
+        
+    }
+
+}
+
+ 
